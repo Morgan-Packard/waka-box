@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/setup-node@v4.0.3
         with:
-          node-version: '10.51.1' # optional
+          node-version: '20' # optional
       - uses: actions/checkout@master
       - name: Update gist
         uses: matchai/waka-box@master
