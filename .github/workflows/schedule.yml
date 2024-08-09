@@ -4,7 +4,6 @@ on:
     - cron: "0 0 * * *"
   # Manual triggers with workflow_dispatch
   workflow_dispatch:
-  push:
 jobs:
   update-gist:
     runs-on: ubuntu-latest
@@ -16,4 +15,3 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: f9baee0a67b1f7eb05433fe8cb20680d
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-#test
