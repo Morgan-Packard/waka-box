@@ -8,13 +8,11 @@ jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
       - uses: actions/checkout@master
       - name: Update gist
         uses: matchai/waka-box@master
+        with:
+          node-version: 20
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
